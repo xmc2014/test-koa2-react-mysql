@@ -9,7 +9,7 @@ class Login extends Server {
     async login(params) {
         let result = [];
         try {
-            result = await this.post('/login/',{name:params.loginName,pwd:params.loginPwd});
+            result = await this.post('/login/',{phone:params.loginName,pwd:params.loginPwd});
         } catch (error) {
             throw error;
         }

@@ -27,7 +27,6 @@ class App extends Component {
 
     // 登录 
     login = async () => {
-        debugger;
         // 空值校验
         if (!this.state.loginName || !this.state.loginPwd) {
             alert("用户名或密码不能为空");

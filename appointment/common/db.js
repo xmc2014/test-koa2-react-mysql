@@ -8,6 +8,7 @@ const pool = mysql.createPool({
 });
 
 let query = async(sql,values)=>{
+	console.log(sql);
 	return new Promise((resolve,reject)=>{
 		pool.getConnection((err,connection)=>{
 			if(err){
@@ -17,7 +18,6 @@ let query = async(sql,values)=>{
 					if(err){						
 						reject(err);
 					}else{
-						console.log(results);///////////////////
 						resolve({
 							status:200,
 							msg:'sucuss',

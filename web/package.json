@@ -97,6 +97,7 @@
     "html-loader": "^0.5.5",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
-    "mockjs": "^1.0.1-beta3"
+    "mockjs": "^1.0.1-beta3",
+    "proxy": "^0.2.4"
   }
 }
